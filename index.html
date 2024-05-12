@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XOR Encryption/Decryption</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>XOR Encryption/Decryption</h1>
+        <div class="input-group">
+            <label for="plaintext">Plaintext (in bits):</label><br>
+            <input type="text" id="plaintext" class="input-field"><br>
+            <label for="key">Key (in bits):</label><br>
+            <input type="text" id="key" class="input-field"><br>
+            <label for="blockSize">Block Size:</label><br>
+            <select id="blockSize" class="input-field">
+                <option value="3">3 bits</option>
+                <option value="4">4 bits</option>
+            </select><br><br>
+            <button onclick="encryptDecrypt()" class="action-button">Encrypt/Decrypt</button><br><br>
+        </div>
+    
+        <div class="result-group">
+            <label for="result-before">Result</label><br>
+            <textarea id="result-before" rows="4" cols="50" readonly class="result-field"></textarea>
+            <textarea id="result-after" rows="4" cols="50" readonly class="result-field"></textarea>
+        </div>
+        
+        <div class="result-group">
+            <label for="result-decimal">Notasi Decimal:</label><br>
+            <textarea id="result-decimal" rows="4" cols="50" readonly class="result-field"></textarea>
+            <textarea id="sum-decimal" rows="1" cols="50" readonly class="result-field"></textarea>
+        </div>
+
+        <div class="result-group">
+            <label for="hex-result">Notasi Hexadecimal:</label><br>
+            <textarea id="hex-result" rows="4" cols="50" readonly class="result-field"></textarea>
+        </div>
+        
+        
+        
+    
+    <script src="script.js"></script>
+</body>
+</html>
